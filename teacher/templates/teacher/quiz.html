@@ -1,0 +1,28 @@
+{% extends 'teacher/base.html' %}
+
+{% block main %}
+
+<section class="top-container">
+    <header class="showcase_greybackground">
+        <h1>Quiz</h1>
+    </header>
+</section>
+
+<section class="info">
+    <div class="formulario">
+
+    {% if points >= 0  %}
+        {{user}} has {{points}} out of 20.
+    {% endif %}
+    
+        <form action="" method="POST">
+          {% csrf_token %}
+
+          {{ form.as_p }}
+          
+            <input type="submit" value="Gravar" class="btn btn-success" >
+        </form>
+    </div>
+</section>
+
+{% endblock %}

@@ -1,0 +1,124 @@
+{% extends 'teacher/base.html' %}
+
+{% block main %}
+
+<section class="top-container">
+    <header class="showcase_greybackground">
+        <h1>Cheatsheet / Learn CSS</h1>
+        <h1>Syntax and Selectors</h1>
+    </header>
+    </section>
+
+       
+    <section class="info">
+    <div class="cheatsheethtml">
+        <a href="https://www.codecademy.com/learn/learn-css/modules/syntax-and-selectors/cheatsheet" target="_blank">
+            <h2><span class="cheatseetheader">< link > </span>Link Element</h2>
+        </a>
+        <p>The <span class="cheatseetheader">< link > </span> element is used to link HTML documents to external resources like CSS files. It commonly uses:
+            <li><span class="cheatseetheader">href </span> attribute to specify the URL to the external resource</li>
+            <li><span class="cheatseetheader">rel </span> attribute to specify the relationship of the linked document to the current document</li>
+            <li><span class="cheatseetheader">type </span> attribute to define the type of content being linked</li>
+        </p>
+    </div>
+    <div class="cheatsheethtml">
+        <a href="#">
+            <h2>Purpose of CSS</h2>
+        </a>
+        <p>CSS, or Cascading Style Sheets, is a language that is used in combination with HTML that customizes how HTML elements will appear. CSS can define styles and change the layout and design of a sheet.</p>
+    </div>
+    <div class="cheatsheethtml">
+        <a href="#">
+            <h2>Write CSS in Separate Files</h2>
+        </a>
+        <p>CSS code can be written in its own files to keep it separate from the HTML code. The extension for CSS files is .css. These can be linked to an HTML file using a <span class="cheatseetheader">< link > </span> tag in the <span class="cheatseetheader">< head > </span> section.</p>
+    </div>
+    <div class="cheatsheethtml">
+        <a href="#">
+            <h2>Write CSS in HTML File</h2>
+        </a>
+        <p>CSS code can be written in an HTML file by enclosing the code in <span class="cheatseetheader">&lt; style > </span> tags will be interpreted as CSS syntax.</p>
+    </div>
+    <div class="cheatsheethtml">
+        <a href="#">
+            <h2>Inline Styles</h2>
+        </a>
+        <p>CSS styles can be directly added to HTML elements by using the style attribute in the element’s opening tag. Each style declaration is ended with a semicolon. Styles added in this manner are known as <i>inline</i> styles.</p>
+    </div>
+    <div class="cheatsheethtml">
+        <a href="#">
+            <h2>Separating HTML code from CSS code</h2>
+        </a>
+        <p>It is common practice to separate content code in HTML files from styling code in CSS files. This can help make the code easier to maintain, by keeping the syntax for each file separate, and any changes to the content or styling can be made in their respective files.</p>
+    </div>
+    <div class="cheatsheethtml">
+        <a href="#">
+            <h2>Class and ID Selectors</h2>
+        </a>
+        <p>CSS classes can be reusable and applied to many elements. Class selectors are denoted with a period . followed by the class name. CSS ID selectors should be unique and used to style only a single element. ID selectors are denoted with a hash sign <code>#</code> followed by the id name.</p>
+    </div>
+    <div class="cheatsheethtml">
+        <a href="#">
+            <h2>Groups of CSS Selectors</h2>
+        </a>
+        <p>Match multiple selectors to the same CSS rule, using a comma-separated list.</p>
+    </div>
+    <div class="cheatsheethtml">
+        <a href="#">
+            <h2>Selector Chaining</h2>
+        </a>
+        <p>CSS selectors define the set of elements to which a CSS rule set applies. For instance, to select all <code>< p ></code> elements, the p selector can be used to create style rules.</p>
+    </div>
+    <div class="cheatsheethtml">
+        <a href="#">
+            <h2>Chaining Selectors</h2>
+        </a>
+        <p>CSS selectors can be chained so that rule sets apply only to elements that match all criteria. For instance, to select <code>< h3 ></h3></code> elements that also have the section-heading class, the selector h3.section-heading can be used.
+
+        </p>
+    </div>
+    <div class="cheatsheethtml">
+        <a href="#">
+            <h2>CSS Type Selectors</h2>
+        </a>
+        <p>CSS type selectors are used to match all elements of a given type or tag name. Unlike for HTML syntax, we do not include the angle brackets when using type selectors for tag names. When using type selectors, elements are matched regardless of their nesting level in the HTML.</p>
+    </div>
+    <div class="cheatsheethtml">
+        <a href="#">
+            <h2>CSS class selectors</h2>
+        </a>
+        <p>The CSS class selector matches elements based on the contents of their class attribute. For selecting elements having calendar-cell as the value of the class attribute, a . needs to be prepended.</p>
+    </div>
+    <div class="cheatsheethtml">
+        <a href="#">
+            <h2>HTML attributes with multiple values</h2>
+        </a>
+        <p>Some HTML attributes can have multiple attribute values. Multiple attribute values are separated by a space between each attribute.
+
+        </p>
+    </div>
+    <div class="cheatsheethtml">
+        <a href="#">
+           <h2>Selector Specificity</h2> 
+        </a>
+        <p>Specificity is a ranking system that is used when there are multiple conflicting property values that point to the same element. When determining which rule to apply, the selector with the highest specificity wins out. The most specific selector type is the ID selector, followed by class selectors, followed by type selectors. In this example, only color: blue will be implemented as it has an ID selector whereas color: red has a type selector.</p>
+    </div>
+    <div class="cheatsheethtml">
+        <a href="#">
+            <h2>CSS ID selectors</h2>
+        </a>
+        <p>The CSS ID selector matches elements based on the contents of their id attribute. The values of id attribute should be unique in the entire DOM. For selecting the element having job-title as the value of the id attribute, a # needs to be prepended.<br>
+        <br> When needed, the <span class="cheatseetheader"><b>id</b></span> value can be called upon by CSS and JavaScript to manipulate, format, and perform specific instructions on that element and that element only. Valid id attributes should begin with a letter and should only contain letters (a-Z), digits (0-9), hyphens (-), underscores (_), and periods (.).
+        </p>
+    </div>
+    <div class="cheatsheethtml">
+        <a href="#">
+            <h2>CSS descendant selector</h2>
+        </a>
+        <p>The CSS descendant selector combinator is used to match elements that are descended from another matched selector. They are denoted by a single space between each selector and the descended selector. All matching elements are selected regardless of the nesting level in the HTML.</p>
+    </div>
+</section>
+
+   
+
+{% endblock %}

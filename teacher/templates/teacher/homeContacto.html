@@ -1,0 +1,16 @@
+{% extends 'teacher/base.html' %}
+
+{% block main %}
+
+    {% for contact in contacts %}
+        <p>
+
+           {{contact.email}}
+
+            <a href="{% url 'teacher:editaContacto' contact.id %}" class="btn btn-warning  btn-sm" style="float: right; margin-right: 10px">
+                Editar
+            </a>
+        </p>
+   {% endfor %}
+        <a href="{% url 'teacher:novaContacto' %}" class="btn btn-success btn-block">+ Novo Contacto</a>
+{% endblock %}

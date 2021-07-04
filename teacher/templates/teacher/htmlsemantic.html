@@ -1,0 +1,62 @@
+{% extends 'teacher/base.html' %}
+
+{% block main %}
+
+ 
+<section class="top-container">
+    <header class="showcase_greybackground">
+        <h1>Cheatsheet / Learn HTML</h1>
+        <h1>Semantic HTML</h1>
+    </header>
+    </section>
+
+   
+
+   
+    <section class="info">
+    <div class="cheatsheethtml">
+        <a href="#">
+            <h2>Semantic HTML</h2>
+        </a>
+        <p>Semantic HTML introduces meaning to the code we write. Before Semantic HTML the elements didn’t have any meaning as to what it does or what content goes in it. An element such as <span class="cheatseetheader">< div > </span> was used as a general-purpose element to create things from headers to footers to articles. With Semantic HTML we were introduced to elements that tell developers and browsers exactly what it does and what content should go in it.
+        </p>
+    </div>
+    <div class="cheatsheethtml">
+        <a href="#">
+            <h2>Element Placement</h2>
+        </a>
+        <p>Semantic HTML introduces elements that can tell developers exactly what the element does or where it’s placed based on the name of that element. Some of these elements are <span class="cheatseetheader">< header > </span> <span class="cheatseetheader">< nav > </span>, <span class="cheatseetheader">< main > </span>, and <span class="cheatseetheader">< footer > </span>. <span class="cheatseetheader">< header > </span> describes the content at the top of the page <span class="cheatseetheader">< body > </span>. It may include a logo, navigational links or a search bar. <span class="cheatseetheader">< nav > </span> encapsulates the page’s navigational links. It is often placed inside the <span class="cheatseetheader">< header > </span> or <span class="cheatseetheader">< footer > </span>. <span class="cheatseetheader">< main > </span> encapsulates the main content of a page between the header/navigation and the footer areas. <span class="cheatseetheader">< footer > </span> includes the page’s footer content at the bottom of the <span class="cheatseetheader">< body > </span>.
+        </p>
+    </div>
+    <div class="cheatsheethtml">
+        <a href="#">
+            <h2>Embedding media</h2>
+        </a>
+        <p>Semantic HTML introduces us to <span class="cheatseetheader">< video > </span>, <span class="cheatseetheader">< audio > </span> and <span class="cheatseetheader">< embed > </span>. <span class="cheatseetheader">< video > </span> allows us to add videos to our website. <span class="cheatseetheader">< audio > </span> allows us to implement audio into our website. <span class="cheatseetheader">< embed > </span> can be used to implement any type of media. These elements are universal in that they all use the <span class="cheatseetheader">src </span> attribute to link the source of the content. <span class="cheatseetheader">< video > </span> and <span class="cheatseetheader">< audio > </span> requires a closing tag while <span class="cheatseetheader">< embed > </span> is a self-closing tag.
+        </p>
+    </div>
+    <div class="cheatsheethtml">
+        <a href="#">
+            <h2><span class="cheatseetheader">< figure > </span>and <span class="cheatseetheader">< figcaption > </span></h2>
+        </a>
+        <p>The <span class="cheatseetheader">< figure > </span> element is used to encapsulate media such as an image, diagram. or code snippet. The <span class="cheatseetheader">< figcaption > </span> element is used to describe the media encapsulated within the <span class="cheatseetheader">< figure > </span> element. Developers will normally use <span class="cheatseetheader">< figcaption > </span> within the <span class="cheatseetheader">< figure > </span> element to group the media and description. This way, if a developer decides to change the position of the media, the description will follow along with it.
+        </p>
+    </div>
+    <div class="cheatsheethtml">
+        <a href="#">
+            <h2><span class="cheatseetheader">< section > </span>and <span class="cheatseetheader">< article > </span></h2>
+        </a>
+        <p><span class="cheatseetheader">< section > </span> defines elements in a document, such as chapters, headings, or any other area of the document with the same theme. <span class="cheatseetheader">< article ></span> holds content that makes sense on its own such as articles, blogs, and comments. Generally developers will use <span class="cheatseetheader">< section ></span> to define a theme for the webpage and use <span class="cheatseetheader">< article ></span> to write independent content for that theme. This does not mean that <span class="cheatseetheader">< article ></span> has to be used with <span class="cheatseetheader">< section ></span>.
+        </p>
+    </div>
+    <div class="cheatsheethtml">
+        <a href="#">
+            <h2><span class="cheatseetheader">< aside > </span>Aside Element</h2>
+        </a>
+        <p>The <span class="cheatseetheader">< aside > </span> element is used to mark additional information that can enhance another element but isn’t required in order to understand the main content. Usually, this information would be in a sidebar or a location where it doesn’t obstruct the main piece of content. An example of this would be an article that discusses how to take care of a dog and next to the article an ad would appear advertising a dog grooming product.
+        </p>
+    </div>
+    
+</section>
+
+{% endblock %}

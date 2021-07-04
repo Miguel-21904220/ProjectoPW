@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+{% load static %}
+<html lang = "en">
+    <head>
+        <title>Web Teacher</title>
+        <meta charset="UTF-8">
+        <meta name="description" content="HTML CSS Tutorial ">
+        <meta name="keywords" content="HTML, CSS">
+        <meta name="author" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        {% load static %}
+        <link rel="stylesheet" href="{% static 'teacher/base.css' %}">
+        <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css" rel="stylesheet"  type='text/css'>
+        <link rel="preconnect" href="https://fonts.gstatic.com">
+        <link href="https://fonts.googleapis.com/css2?family=Dosis:wght@500&display=swap" rel="stylesheet">
+        <link rel="shortcut icon" href="images/favicon.ico" type="image/x-icon">
+        <link rel="icon" href="/favicon.ico" type="image/x-icon">
+    </head>
+    <body>
+        <div class="wrapper">
+
+            <nav class="main-nav">
+                <ul>
+                    <li>
+                    <a href="{% url 'teacher:index' %}">Home</a>
+                    </li>
+                    <li class="dropdown">
+                    <a href="{% url 'teacher:html' %}"class="dropbtn">Html</a>
+                    <div class="dropdown-content">
+                        <a href="{% url 'teacher:htmlelements' %}">Elements and Structure</a>
+                        <a href="{% url 'teacher:html' %}">Tables</a>
+                        <a href="{% url 'teacher:htmlforms' %}">Forms</a> 
+                        <a href="{% url 'teacher:htmlsemantic' %}">Semantic HTML</a>   
+                    </div>
+                    </li>
+                    <li class="dropdown">
+                    <a href="{% url 'teacher:css' %}" class="dropbtn">Css</a>
+                    <div class="dropdown-content">
+                        <a href="{% url 'teacher:csssyntax' %}">Syntax and Selectors</a>  
+                    </div>
+                    </li>
+                    <li>
+                    <a href="{% url 'teacher:about' %}">About</a>
+                    </li>
+                    <li class="dropdown">
+                      <a href="" class="dropbtw">More</a>
+                      <div class="dropdown-content">
+                        <a href="{% url 'teacher:homeContacto' %}">Contact us</a>
+                        <a href="{% url 'teacher:quiz' %}">Quiz</a>
+                        <a href="{% url 'teacher:comments' %}">Comments</a>
+                    </div>
+                    
+                    </li>
+                </ul>
+                </nav>
+
+            {% block main %}
+
+            {% endblock %}
+        </div>
+
+        <footer  class="footer">
+            <div class="icons-sociais">
+              <ul>
+                <li>
+                  <a href="#" target="_blank">
+                    <i class="fa fa-facebook-f fa-2x"></i>
+                    </a>
+                </li>
+                <li>
+                  <a href="#" target="_blank">
+                    <i class="fa fa-instagram fa-2x"></i>
+                <li>
+                  <a href="#" target="_blank">
+                    <i class="fa fa-linkedin fa-2x"></i>
+                </li>
+                <li>
+                  <a href="#" target="_blank">
+                    <i class="fa fa-twitter fa-2x"></i>
+                </li>
+                <li>
+                  <a href="#" target="_blank">
+                    <i class="fa fa-google fa-2x"></i>
+                </li>
+              </ul>
+            </div>
+          </footer>
+    </body>
+ </html>

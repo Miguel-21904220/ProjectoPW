@@ -1,0 +1,131 @@
+{% extends 'teacher/base.html' %}
+
+{% block main %}
+
+<section class="top-container">
+    <header class="showcase_greybackground">
+        <h1>About the Website</h1>
+    </header>
+    </section>
+
+
+
+
+<section class="info">
+    <table id="tabelas">
+        <tr>
+          <th>Carateristicas</th>
+          <th>Elementos/técnicas</th>
+          <th>Exemplos</th>
+        </tr>
+        <tr>
+          <td>Layout</td>
+          <td>Usou-se o CSS grid e CSS flexbox para construção de layouts</td>
+          <td>Utilizado com ênfase na página inicial, onde se demonstra com facilidade nas "boxes" </td>
+        </tr>
+        <tr>
+          <td>Responsividade</td>
+          <td>Foram usadas media queries que adaptam o layout para telemovel e PC consoante o tamanho da janela do browser.</td>
+          <td>O nosso website é responsive, de tal forma que o ecrã terá que ter no mínimo 701px para apresentar um display original. Abaixo desse valor será outro </td>
+        </tr>
+        <tr>
+          <td>Seletores</td>
+          <td>Foram usados seletores de : tags, classe, id</td>
+          <td>Para alterar a fonte de um certo div , assim como a background color , etc</td>
+        </tr>
+        <tr>
+          <td>Etiquetas</td>
+          <td>HTML5 main, header, article, footer, section, div, table, tr, td, ul, li, a, img, title, i , h2, p</td>
+          <td>As tags foram usadas em todas as páginas do nosso website</td>
+        </tr>
+        <tr>
+          <td>Animações</td>
+          <td>Foram feitas animações usando keyframes que permite a rotação da imagem</td>
+          <td>Como usar animações era um requisito, optei por fazer com que 2 imagens na página About tivessem uma rotação</td>
+        </tr>
+      </table>
+    
+
+      
+
+      <table id="tabelas">
+        <tr>
+          <th>Tipo</th>
+          <th>Quantidade</th>
+          
+        </tr>
+        <tr>
+          <td>Páginas</td>
+          <td>11</td>
+          
+        </tr>
+        <tr>
+          <td>Imagens</td>
+          <td>5</td>
+          
+        </tr>
+        <tr>
+          <td>Links Externos</td>
+          <td>2</td>
+          
+        </tr>
+        <tr>
+          <td>Vídeos</td>
+          <td>2</td>
+          
+        </tr>
+        <tr>
+          <td>Animações</td>
+          <td>2</td>
+          
+        </tr>
+       
+      </table>
+
+      <figure>
+        <img src="images/css.png" class="imagens" width="25%" height="25%">
+        <img src="images/html5.png" class="imagens" width="25%" height="25%">
+        <br><br><br><br>
+        <figcaption>Imagem de CSS e HTML</figcaption>
+    </figure>
+
+      <svg width="350" height="175">
+        <image href="images/wordcloud.png" width="100%" height="100%" target="_blank"></image>
+        <a href="html.html" target="_blank">
+            <polygon points="63,110 65,52 229,52 268,112" opacity="0.2" >   
+            </polygon>
+        </a>
+        <a href="css.html" target="_blank">
+            <polygon points="205,158 205,116 302,118 305,159" opacity="0.2" >   
+            </polygon>
+        </a>
+        <a href="formulario.html" target="_blank">
+            <polygon points="91,137 89,115 200,115 198,137" opacity="0.2" >
+            </polygon>
+        </a>
+        <a href="about.html" target="_blank">
+            <polygon points="237,104 240,78 322,81 323,104" opacity="0.2" >    
+            </polygon>
+        </a>
+        <a href="webdevelopment.html" target="_blank">
+            <polygon points="56,52 53,20 196,25 195,55" opacity="0.2" >    
+            </polygon>
+        </a>
+        <a href="index.html" target="_blank">
+          <polygon points="236,78 236,59 297,59 299,76" opacity="0.2" >         
+            </polygon>
+        </a> 
+    </svg> 
+      
+    <figure>
+        <img src="images/mapadehiperligações.png">
+        <figcaption>Mapa do Website</figcaption>
+    </figure>
+    <iframe width="800" height="425" src="https://www.youtube.com/embed/phZpEJUT64w"></iframe>
+</section>
+
+
+
+
+
+{% endblock %}

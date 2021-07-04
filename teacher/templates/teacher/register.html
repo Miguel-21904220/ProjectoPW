@@ -1,0 +1,30 @@
+{% extends 'teacher/base.html' %}
+
+{% block main %}
+
+<section class="top-container">
+    <header class="showcase_greybackground">
+        <h1>Register</h1>
+    </header>
+    </section>
+
+<section class="info">
+    <div class="formulario">
+        <form action="" method="POST">
+    {% csrf_token %}
+
+    {% for field in form %}
+        <div>
+            <p>{{ field.label }}: <br> {{ field }}</p> 
+
+            {% for error in field.errors %}
+                <small style="color: red">{{ error }}</small>
+            {% endfor %}
+        </div>
+    {% endfor %}
+    <button type="submit">Register</button>
+</form>
+</div>
+</section>
+
+{% endblock %}

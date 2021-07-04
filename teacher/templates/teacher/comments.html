@@ -1,0 +1,34 @@
+{% extends 'teacher/base.html' %}
+
+{% block main %}
+
+<section class="top-container">
+    <header class="showcase_greybackground">
+        <h1>Quiz</h1>
+    </header>
+</section>
+
+<section class="info">
+    <div class="formulario">
+        <form action="" method="POST">
+          {% csrf_token %}
+
+          {{ form.as_p }}
+          
+            <input type="submit" value="Gravar" class="btn btn-success" >
+        </form>
+   
+
+    {% for o in comentario %}
+    <p>
+
+       {{o.name}} said:
+
+       {{o.comment}} 
+
+    </p>
+    {% endfor %}
+</div>
+</section>
+
+{% endblock %}

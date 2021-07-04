@@ -1,0 +1,49 @@
+{% extends 'teacher/base.html' %}
+
+{% load static %}
+
+{% block main %}
+
+
+<section class="top-container">
+    <header class="showcase">
+        <h1>Web Development</h1>
+        
+        {% if user.is_authenticated %}
+    <div class="alert alert-success" role="alert">
+        <h2 class="white-text" style="color: white;">Welcome {{ user.username }}!</h2>
+        <p>You want to start Web Development?</p>
+        <a href="{% url 'teacher:logout' %}" class="btn">Logout?</a>
+    </div>
+{% else %}
+    <div class="alert alert-success" role="alert">
+        <a href="{% url 'teacher:register' %}" class="btn">Signup</a>
+        <a href="{% url 'teacher:login' %}" class="btn">Login</a>
+    </div>
+{% endif %}
+
+    </header>
+    </section>
+
+    
+    <section class="boxes">
+    <div class="box">
+        <i class="fa fa-html5 fa-spin fa-3x" style="font-size: 60px;"></i>
+        <a href="html.html">
+            <h3>HTML</h3>
+        </a>
+        <p>The language for building web pages</p>
+    </div>
+    <div class="box">
+        <i class="fa fa-css3 fa-spin fa-3x" style="font-size:60px;"></i>
+        <a href="css.html">
+            <h3>CSS</h3>
+        </a>
+        <p>The language for styling web pages</p>
+    </div>
+    
+    
+</section>
+
+
+{% endblock %}

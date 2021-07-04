@@ -1,0 +1,186 @@
+
+{% extends 'teacher/base.html' %}
+
+{% block main %}
+ 
+<section class="top-container">
+    <header class="showcase_greybackground">
+        <h1>Cheatsheet / Learn HTML</h1>
+        <h1>Forms</h1>
+    </header>
+    </section>
+
+   
+
+    
+    <section class="info">
+    <div class="cheatsheethtml">
+        <a href="#">
+            <h2><span class="cheatseetheader">< input > </span>Checkbox Type</h2>
+        </a>
+        <p>When using an HTML <span class="cheatseetheader"> input  </span> element, the <span class="cheatseetheader">type="checkbox</span> attribute will render a single checkbox item. To create a group of checkboxes related to the same topic, they should all use the same <span class="cheatseetheader">name</span> attribute. Since it’s a checkbox, multiple checkboxes can be selected for the same topic.</p>
+    </div>
+    <div class="cheatsheethtml">
+        <a href="#">
+            <h2><span class="cheatseetheader">< textarea > </span>Element</h2>
+        </a>
+        <p>The <span class="cheatseetheader"> textarea  </span> element is used when creating a text-box for multi-line input (e.g. a comment section). The element supports the <span class="cheatseetheader"> rows  </span> and <span class="cheatseetheader">cols </span> attributes which determine the height and width, respectively, of the element.<br><br>
+            When rendered by the browser, <span class="cheatseetheader"> textarea  </span> fields can be stretched/shrunk in size by the user, but the <span class="cheatseetheader"> rows  </span> and <span class="cheatseetheader">cols </span> attributes determine the initial size.<br><br>
+            Unlike the <span class="cheatseetheader"> input  </span> element, the<span class="cheatseetheader">< textarea > </span> element has both opening and closing tags. The <span class="cheatseetheader"> value  </span> of the element is the content in between these tags (much like a <span class="cheatseetheader"> < p > </span> element). The code block shows a <span class="cheatseetheader">< textarea > </span> of size 10x30 and with a <span class="cheatseetheader"> name  </span> of <span class="cheatseetheader"> "comment"  </span>.
+        </p>
+    </div>
+    <div class="cheatsheethtml">
+        <a href="#">
+            <h2><span class="cheatseetheader">< form > </span>Element</h2>
+        </a>
+        <p>The HTML <span class="cheatseetheader">< form > </span> element is used to collect and send information to an external source.<br><br>
+            <span class="cheatseetheader">< form > </span> can contain various input elements. When a user submits the form, information in these input elements is passed to the source which is named in the <span class="cheatseetheader"> action </span> attribute of the form.</p>
+    </div>
+    <div class="cheatsheethtml">
+        <a href="#">
+            <h2><span class="cheatseetheader">< input >: </span>Number Type</h2>
+        </a>
+        <p>HTML input elements can be of type <span class="cheatseetheader">number </span>. These input fields allow the user to enter only numbers and a few special characters inside the field.
+        </p>
+    </div>
+    <div class="cheatsheethtml">
+        <a href="#">
+            <h2><span class="cheatseetheader">< input > </span>Element Type</h2>
+        </a>
+        <p>The HTML <span class="cheatseetheader">< input > </span> element is used to render a variety of input fields on a webpage including text fields, checkboxes, buttons, etc. <span class="cheatseetheader">< input > </span> element have a <span class="cheatseetheader">type </span> attribute that determines how it gets rendered to a page.
+        </p>
+    </div>
+    <div class="cheatsheethtml">
+        <a href="#">
+            <h2><span class="cheatseetheader">< input >: </span>Range Type</h2>
+        </a>
+        <p>A slider can be created by using the <span class="cheatseetheader">type="range" </span> attribute on an HTML <span class="cheatseetheader"> input  </span> element. The range slider will act as a selector between a minimum and a maximum value. These values are set using the <span class="cheatseetheader">min </span> and <span class="cheatseetheader">max </span> attributes respectively. The slider can be adjusted to move in different steps or increments using the <span class="cheatseetheader">step </span> attribute.<br><br>
+            The range slider is meant to act more as a visual widget to adjust between 2 values, where the relative position is important, but the precise value is not as important. An example of this can be adjusting the volume level of an application.
+        </p>
+    </div>
+    <div class="cheatsheethtml">
+        <a href="#">
+            <h2><span class="cheatseetheader">< select > </span>Element</h2>
+        </a>
+        <p>The HTML <span class="cheatseetheader">< select > </span> element can be used to create a dropdown list. A list of choices for the dropdown list can be created using one or more <span class="cheatseetheader">< option > </span> elements. By default, only one <span class="cheatseetheader">< option > </span> can be selected at a time.<br><br>
+            The value of the selected <span class="cheatseetheader">< select > </span>’s <span class="cheatseetheader">name </span> and the <span class="cheatseetheader">< option > </span>’ s <span class="cheatseetheader">value </span> attribute are sent as a key-value pair when the form is submitted.
+        </p>
+    </div>
+    <div class="cheatsheethtml">
+        <a href="#">
+            <h2>Submitting a Form</h2>
+        </a>
+        <p>Once we have collected information in a form we can send that information somewhere else by using the <span class="cheatseetheader">action </span> and <span class="cheatseetheader">method </span> attribute. The <span class="cheatseetheader">action </span> attribute tells the form to send the information. A URL is assigned that determines the recipient of the information. The <span class="cheatseetheader">method </span> attribute tells the form what to do with that information once it’s sent. An HTTP verb is assigned to the <span class="cheatseetheader">method </span> attribute that determines the action to be performed.</p>
+    </div>
+    <div class="cheatsheethtml">
+        <a href="#">
+            <h2><span class="cheatseetheader">< input >: </span>Text Type</h2>
+        </a>
+        <p>HTML <span class="cheatseetheader">< input > </span> elements can support text input by setting the attribute <span class="cheatseetheader">type="text" </span>. This renders a single row input field that users can type text inside.<br><br>
+            The value of the <span class="cheatseetheader">< input > </span>‘s <span class="cheatseetheader">name </span> and <span class="cheatseetheader">value </span> attribute of the element are sent as a key-value pair when the form is submitted.
+        </p>
+    </div>
+    <div class="cheatsheethtml">
+        <a href="#">
+            <h2><span class="cheatseetheader">< datalist > </span>Element</h2>
+        </a>
+        <p>When using an HTML <span class="cheatseetheader">input </span>, a basic search/autocomplete functionality can be achieved by pairing an <span class="cheatseetheader">< input > </span> with a <span class="cheatseetheader">< datalist > </span>. To pair a <span class="cheatseetheader">< input > </span> with a <span class="cheatseetheader">< datalist > </span> the <span class="cheatseetheader">< input > </span>’s <span class="cheatseetheader">list </span> value must match the value of the <span class="cheatseetheader">id </span> of the <span class="cheatseetheader">< datalist > </span>. <span class="cheatseetheader">datalist </span> element is used to store a list of <span class="cheatseetheader">< option > </span>s.<br><br>
+            The list of data is shown as a dropdown on an input field when a user clicks on the input field. As the user starts typing, the list will be updated to show elements that best match what has been typed into the input field. The actual list items are specified as multiple <span class="cheatseetheader">option </span> elements nested inside the <span class="cheatseetheader">datalist  </span>.<br><br>
+            <span class="cheatseetheader">datalists </span> are ideal when providing users a list of pre-defined options, but to also allow them to write alternative inputs as well.
+        </p>
+    </div>
+    <div class="cheatsheethtml">
+        <a href="#">
+            <h2><span class="cheatseetheader">< input >: </span>Radio Button Type</h2>
+        </a>
+        <p>HTML <span class="cheatseetheader">< input > </span> elements can be given a  <span class="cheatseetheader">type="radio" </span>attribute that renders a single radio button. Multiple radio buttons of a related topic are given the same <span class="cheatseetheader">name </span> attribute value. Only a single option can be chosen from a group of radio buttons.<br><br>
+            The value of the selected/checked <span class="cheatseetheader">< input > </span>’s <span class="cheatseetheader">name </span> and <span class="cheatseetheader">value </span> attribute of this element are sent as a key-value pair when the form is submitted.
+        </p>
+    </div>
+    <div class="cheatsheethtml">
+        <a href="#">
+            <h2>Submittable Input</h2>
+        </a>
+        <p>HTML <span class="cheatseetheader">< input > </span> elements can have a type attribute set to submit, by adding <span class="cheatseetheader">type="submit" </span>. With this attribute included, a submit button will be rendered and, by default, will submit the <span class="cheatseetheader">< form > </span> and execute its action.<br><br>
+            The text of a submit button is set to <span class="cheatseetheader">Submit </span> by default but can also be changed by modifying the <span class="cheatseetheader">value </span> attribute.
+        </p>
+    </div>
+    <div class="cheatsheethtml">
+        <a href="#">
+            <h2><span class="cheatseetheader">< input > name </span>Attribute</h2>
+        </a>
+        <p>In order for a form to send data, it needs to be able to put it into key-value pairs. This is achieved by setting the <span class="cheatseetheader">name </span> attribute of the <span class="cheatseetheader">input </span> element. The <span class="cheatseetheader">name </span> will become the <span class="cheatseetheader">key </span> and the <span class="cheatseetheader">value </span> of the input will become the <span class="cheatseetheader">value </span> the form submits corresponding to the key.<br><br>
+            It’s important to remember that the name is not the same as the ID in terms of form submission. The ID and the name of the input may be the same, but the value will only be submitted if the <span class="cheatseetheader">name </span> attribute is specified.
+        </p>
+    </div>
+    <div class="cheatsheethtml">
+        <a href="#">
+            <h2><span class="cheatseetheader">< label > </span>Element</h2>
+        </a>
+        <p>The HTML <span class="cheatseetheader">< label > </span> element provides identification for a specific <span class="cheatseetheader">< input > </span> based on matching values of the <span class="cheatseetheader">< input > </span>‘s <span class="cheatseetheader">id </span> attribute and the <span class="cheatseetheader">< label > </span>‘s for attribute. By default, clicking on the <span class="cheatseetheader">< label > </span> will focus the field of the related <span class="cheatseetheader">< input > </span>.
+        </p>
+    </div>
+    <div class="cheatsheethtml">
+        <a href="#">
+            <h2><span class="cheatseetheader">< input > </span>Password Type</h2>
+        </a>
+        <p>The HTML <span class="cheatseetheader">< input > </span> element can have the attribute <span class="cheatseetheader">type="password" </span> that renders a single row input field which allows the user to type censored text inside the field. It is used to type in sensitive information..<br><br>
+            The value of this <span class="cheatseetheader">< input > </span>’s <span class="cheatseetheader">name </span> and <span class="cheatseetheader">value </span> (actual value and not the censored version) attribute of this element are sent as a key-value pair when the form is submitted.
+        </p>
+    </div>
+    <div class="cheatsheethtml">
+        <a href="#">
+            <h2><span class="cheatseetheader">required</span>Attribute</h2>
+        </a>
+        <p>In HTML, input fields have an attribute called <span class="cheatseetheader">required</span> which specifies that the field must include a value.<br><br>
+            The attribute can be written as <span class="cheatseetheader">required="true</span> or simply <span class="cheatseetheader">required</span>.
+        </p>
+    </div>
+    <div class="cheatsheethtml">
+        <a href="#">
+            <h2><span class="cheatseetheader">max</span>Attribute</h2>
+        </a>
+        <p>HTML <span class="cheatseetheader">< input ></span>s of type <span class="cheatseetheader">number</span> have an attribute called <span class="cheatseetheader">max</span> that specifies the maximum value for the input field.
+        </p>
+    </div>
+    <div class="cheatsheethtml">
+        <a href="#">
+            <h2><span class="cheatseetheader">maxlength</span>Attribute</h2>
+        </a>
+        <p>In HTML, input fields with type <span class="cheatseetheader">text</span> have an attribute called <span class="cheatseetheader">maxlength</span> that specifies the maximum number of characters that can be entered into the field.
+        </p>
+    </div>
+    <div class="cheatsheethtml">
+        <a href="#">
+            <h2><span class="cheatseetheader">pattern</span>Attribute</h2>
+        </a>
+        <p>In a <span class="cheatseetheader">text</span> input element, the <span class="cheatseetheader">pattern</span> attribute uses a regular expression to match against (or validate) the value of the <span class="cheatseetheader">< input ></span>, when the form is submitted.
+        </p>
+    </div>
+    <div class="cheatsheethtml">
+        <a href="#">
+            <h2><span class="cheatseetheader">minlength</span>Attribute</h2>
+        </a>
+        <p>In HTML, an input field of type <span class="cheatseetheader">text</span> has an attribute that supports minimum length validation. To check that the input text has a minimum length, add the <span class="cheatseetheader">minlength</span> attribute with the character count.
+        </p>
+    </div>
+    <div class="cheatsheethtml">
+        <a href="#">
+            <h2>HTML Form Validators</h2>
+        </a>
+        <p>HTML forms allow you to specify different kinds of validation for your input fields to make sure that data is entered correctly before being submitted. HTML supports a number of different validators, including things like minimum value, minimum/maximum length, etc. The validators are specified as attributes on the <span class="cheatseetheader">input</span> field.
+        </p>
+    </div>
+    <div class="cheatsheethtml">
+        <a href="#">
+            <h2><span class="cheatseetheader">min</span>Attribute</h2>
+        </a>
+        <p>In HTML, input fields with type <span class="cheatseetheader">number</span> have an attribute called <span class="cheatseetheader">min</span> that specifies the minimum value that can be entered into the field. The code block provided shows an input number field that accepts a number with minimum value 1.
+        </p>
+    </div>
+
+    
+</section>
+
+   
+{% endblock %}

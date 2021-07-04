@@ -1,0 +1,24 @@
+{% extends 'teacher/base.html' %}
+
+{% block main %}
+
+<section class="top-container">
+    <header class="showcase_greybackground">
+        <h1>Login</h1>
+    </header>
+</section>
+<section class="info">
+    <div class="formulario">
+<form action="" method="POST">
+    {% csrf_token %}
+    {% for field in form %}
+        <p>{{ field.label }}: <br> {{ field }}</p>
+    {% endfor %}
+    <button type="submit">Login</button>
+</form>
+</div>
+</section>
+
+<p>Don't have an account? <a href="{% url 'teacher:register' %}">Signup here</a></p>
+
+{% endblock %}
